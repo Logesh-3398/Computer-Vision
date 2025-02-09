@@ -1,0 +1,43 @@
+Overview
+This assignment consists of three parts, each focusing on a different application of deep learning in image processing using PyTorch. You will work on tasks ranging from image 
+classification with a pre-trained VGG16 network to building your custom convolutional neural network (CNN) and performing semantic segmentation with a fully convolutional network (FCN).
+Part 1: Image Classification with VGG16
+Task Description
+•	Objective: Train a VGG16 network pre-trained on ImageNet on the CIFAR100 dataset for image classification.
+•	Data Preparation:
+o	Resize images to 224x224 pixels.
+o	Apply data transformations for normalization and augmentation (e.g., random horizontal flip).
+•	Model Configuration:
+o	Modify the VGG16 model to suit CIFAR100 by adjusting the final fully connected layer to output 100 classes.
+o	Freeze all layers except the newly added fully connected layer to retain pre-trained features.
+•	Training:
+o	Implement training loops with appropriate loss functions, optimizers, and learning rate schedulers.
+o	Save the best model based on validation accuracy.
+•	Testing:
+o	Evaluate the model on the CIFAR100 test set to report accuracy.
+Deliverables
+•	A Google Colab notebook and a Python script with the implemented model training and evaluation.
+Part 2: Custom Network for Image Classification
+Task Description
+•	Objective: Design and train a custom CNN from scratch on the CIFAR100 dataset.
+•	Network Requirements:
+o	At least 3 convolutional layers, 1 fully connected layer, and 1 max-pooling layer.
+o	ReLU activation functions.
+•	Training and Testing:
+o	Train the network for at least 30 epochs and save the best-performing model.
+o	Evaluate the model on the test set and report accuracy.
+Deliverables
+•	A Google Colab notebook and a Python script showcasing the network architecture, training process, and testing results.
+Part 3: Semantic Segmentation with FCN
+Task Description
+•	Objective: Use a pre-trained FCN network (either fcn_resnet50 or fcn_resnet101) for semantic segmentation on custom images.
+•	Implementation Steps:
+o	Collect images containing objects from specified classes (e.g., cars, dogs).
+o	Process images through the FCN to obtain feature maps and perform segmentation.
+o	Visualize and save the feature maps and the final segmentation outputs.
+•	Segmentation Output:
+o	Generate a segmented image where each class is represented by a unique color.
+Deliverables
+•	A Google Colab notebook and a Python script with the segmentation process.
+•	Submitted images, feature maps, and segmentation results in a structured format (PDF or separate files).
+
