@@ -1,1 +1,29 @@
+Overview
+In this assignment, you will design and implement a stereo analysis system capable of performing multi-resolution matching using both region-based and feature-based methods. The system will employ disparity checks and interpolations to ensure the validity and accuracy of stereo matching across different resolution levels.
+Task Description
+1.	Multi-Resolution Matching:
+o	Develop a system that allows matching at various resolution levels, using disparity from lower resolutions as initialization for higher resolutions.
+o	Ensure that region-based matching is used at the topmost level of resolution.
+2.	Matching Methods:
+o	Region-based Analysis:
+	Allow users to select the size of the matching template and window, which can be square or rectangular.
+	Implement the following matching scores:
+	Sum of Absolute Differences (SAD)
+	Sum of Squared Differences (SSD)
+	Normalized Cross-correlation (NCC)
+o	Feature-based Analysis:
+	Use Harris corner detection for feature extraction and various matching scores (SAD, SSD, NCC) for comparing the descriptor values.
+3.	Validity Check and Disparity Gap Filling:
+o	Implement a validity check to ensure that matches from the left-to-right image comparison correspond to those from the right-to-left.
+o	Use averaging within a defined neighborhood window or quadratic fits to fill gaps in disparity maps where matches do not correspond.
+4.	System Configuration and User Input:
+o	Allow users to set the number of resolution levels and adjust the template size and search neighborhood for each level.
+o	Provide interfaces for users to input or select parameters and execute the stereo matching process.
+5.	Data and Evaluation:
+o	Utilize stereo image pairs from the provided data source (Middlebury Stereo Vision Page).
+o	Assess the system’s performance by evaluating the disparity maps generated and comparing them using known benchmarks from the data source.
+6.	Deliverables:
+o	At least three results for each of five different stereo pairs, each with a comprehensive readme file that explains the result and indicates the parameters used.
+o	A zipped directory containing all source code, data used, and necessary files, ready for submission.
+
 
