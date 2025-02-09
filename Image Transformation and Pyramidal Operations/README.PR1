@@ -1,1 +1,43 @@
+Overview
+This assignment is divided into two major parts, focusing on image transformations and pyramidal operations. Students will employ techniques such as affine and perspective transformations to understand geometric changes and utilize Gaussian and Laplacian pyramids to perform image blending and reconstruction tasks.
+Part A: Image Transformations
+Task Description
+You are provided with five original images and their corresponding transformed versions, which have undergone affine and perspective transformations. Using predefined correspondence points between these images, your tasks are:
+1.	Estimate Transformation Matrices:
+o	Affine Transformation Matrix (X1): Calculate using the least number of correspondences (at least 3).
+o	Perspective Transformation Matrix (X2): Calculate with a minimum of 4 correspondences.
+2.	Transformation Methods:
+o	Method A: Use the minimal number of correspondences to solve for X1 and X2.
+o	Method B: Use more than the minimal number of correspondences to create an over-constrained system for a potentially more accurate estimation.
+3.	Evaluation:
+o	Compare your estimated transformation matrices against OpenCV’s built-in functions (getAffineTransform() and getPerspectiveTransform()).
+o	Compute and report the error between your estimations and the built-in functions.
+o	Display the transformed images using your matrices with OpenCV’s warpAffine() and warpPerspective() functions.
+4.	Improvement:
+o	Manually add ten additional corresponding points between the original and transformed images.
+o	Re-evaluate the transformation matrices with the new correspondences to observe error improvements.
+Deliverables
+•	Estimated transformation matrices for each image using both methods.
+•	Transformed images and error calculations for each method.
+•	A comprehensive report including all estimations, comparisons, and additional correspondences impact analysis.
+Part B: Pyramidal Operations
+Task Description
+Using the Gaussian and Laplacian pyramids, perform various image processing tasks including image blending, reduction, expansion, and reconstruction.
+1.	Pyramidal Functions:
+o	Convolution: Implement a convolution function to apply a kernel to an image without using OpenCV's filter2D().
+o	Reduction: Reduce the image dimensions by half using a Gaussian filter.
+o	Expansion: Double the size of an image using appropriate interpolation.
+o	Gaussian Pyramid: Construct a Gaussian pyramid up to a user-defined number of levels.
+o	Laplacian Pyramid: Build a Laplacian pyramid and use it for image reconstruction.
+2.	Image Blending:
+o	Blend images using the Laplacian pyramid, allowing the user to define the blend boundaries manually.
+o	Implement and compare affine and perspective unwarping techniques for blending.
+3.	Evaluation:
+o	Reconstruct the original image from the Laplacian pyramid and compute the error using image differences.
+o	Provide mosaic results using different unwarping methods.
+Deliverables
+•	Outputs for each pyramidal operation.
+•	Blended and reconstructed images.
+•	A detailed report explaining the methodologies, parameters used, and evaluation results.
+
 
