@@ -1,1 +1,27 @@
+Overview
+This assignment involves applying five different feature detection algorithms to a set of five images. Your task is to detect features using each algorithm, overlay these features on the original images, and generate output images that display the results. This exercise will help you understand the strengths and weaknesses of each algorithm in different scenarios.
 
+Task Description
+Feature Detection Algorithms
+You will use the following five algorithms for feature detection on each image:
+
+Harris Corner Detection: Identifies corners in images, which are regions with large variations in intensity in all directions.
+SIFT (Scale Invariant Feature Transform): Detects and describes local features in images, invariant to scale and rotation.
+SURF (Speeded Up Robust Features): Similar to SIFT but optimized for speed, this algorithm is effective in cases where real-time performance is required.
+FAST (Features from Accelerated Segment Test): Used for corner detection, FAST is much quicker than other corner detectors and is useful in real-time applications.
+ORB (Oriented FAST and Rotated BRIEF): A fusion of FAST keypoint detector and BRIEF descriptor with many modifications to enhance performance.
+Processing Steps for Each Image
+Convert to Grayscale: Convert each image to grayscale to simplify the feature detection process.
+Apply Each Algorithm: Detect features using each of the five algorithms.
+Overlay Features: Overlay the detected features on the original images using distinct colors or markers.
+Output: Generate and save an output image for each algorithm applied to each image.
+Implementation Details
+Input/Output:
+
+Input: Load each of the five images provided in the files directory.
+Output: For each image and each detection algorithm, save an output image that shows the detected features superimposed on the original image.
+Feature Detection and Visualization:
+
+Use OpenCV functions to implement each feature detection algorithm.
+Highlight edges or corners using appropriate graphical markers (e.g., circles for corners, lines for edges).
+Ensure each output image is clearly labeled with the algorithm used.
