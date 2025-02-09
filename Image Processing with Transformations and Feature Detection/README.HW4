@@ -1,1 +1,36 @@
+Overview
+This assignment requires you to apply basic image processing techniques, including edge and corner detection, to an original image. After detecting edges and corners, you will perform a series of geometric transformations on the image and reapply the detection methods.
 
+Task Description
+Feature Detection on Original Image
+
+Edge Detection: Implement an edge detector (such as the Canny edge detector) to identify and highlight edges in the image.
+Corner Detection: Use a corner detector (like the Harris corner detector) to identify and highlight corners.
+Output: Generate two images:
+Image with edges highlighted.
+Image with corners marked.
+Geometric Transformations and Feature Re-Detection
+
+For each of the following transformations, apply both the edge detector and corner detector to the transformed image:
+Rotate the original image by 60 degrees.
+Scale the original image by a factor of 1.6 in both the x and y directions.
+Shear the original image in the x-direction by 1.2.
+Shear the original image in the y-direction by 1.4.
+Implementation Details
+Input/Output:
+
+Input an image file from the user.
+Output should include the original image with detected features and the transformed images with their respective detected features.
+Transformations:
+
+Rotation: Use a rotation matrix to rotate the image.
+Scaling: Apply a scaling transformation matrix to enlarge the image.
+Shearing: Use a shearing matrix for the x and y directions respectively.
+Detection Algorithms:
+
+Implement or use in-built functions for Canny edge detection and Harris corner detection.
+Ensure that each detection algorithm correctly interprets the pixel data post-transformation.
+Edge and Corner Visualization:
+
+Edges can be highlighted by tracing them with a distinct color (e.g., red).
+Corners can be marked using a small circle or a different color (e.g., blue).
